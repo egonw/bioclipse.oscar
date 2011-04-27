@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.bioclipse.oscar_feature"
+      label="Oscar Feature"
+      version="2.5.0.qualifier"
+      provider-name="The Bioclipse Team"
+      plugin="net.bioclipse.oscar">
+
+   <copyright>
+      Copyright (c) 2011 Egon Willighagen.
+   </copyright>
+
+   <license url="http://www.eclipse.org/org/documents/epl-v10.php">
+      EPL License + exception for the GPL plugins.
+   </license>
+
+   <requires>
+      <import feature="net.bioclipse.core_feature" version="2.5.0.qualifier"/>
+   </requires>
+
+   <plugin
+         id="net.bioclipse.oscar"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
