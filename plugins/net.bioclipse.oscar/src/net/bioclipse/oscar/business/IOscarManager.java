@@ -10,12 +10,31 @@
  ******************************************************************************/
 package net.bioclipse.oscar.business;
 
+import java.util.List;
+
 import net.bioclipse.core.PublishedClass;
+import net.bioclipse.core.PublishedMethod;
+import net.bioclipse.core.Recorded;
+import net.bioclipse.core.domain.IMolecule;
 import net.bioclipse.managers.business.IBioclipseManager;
 
 @PublishedClass(
-    value="TODO: Describe the manager here."
+    value="Adds text mining functionality to Bioclipse."
 )
 public interface IOscarManager extends IBioclipseManager {
+
+    @Recorded
+    @PublishedMethod(
+        methodSummary="Extracts molecules from a text.",
+        params="String text"
+    )
+    public List<String> findNamedEntities(String text);
+
+    @Recorded
+    @PublishedMethod(
+        methodSummary="Extracts molecules from a text.",
+        params="String text"
+    )
+    public List<IMolecule> findResolvedNamedEntities(String text);
 
 }
